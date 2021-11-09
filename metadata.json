@@ -5,7 +5,9 @@
   "setupCommands": ["npm i", "npx hardhat compile"],
   "compileCommand": "npx hardhat compile",
   "tests": [
-    { "itShould": "Compile", "command": "sh learn_tests/72.sh" }
+    { "itShould": "Compile", "command": "sh learn_tests/72.sh" },
+    { "itShould": "Call testCallFoo function", "command": "sh learn_tests/2.sh" },
+    { "itShould": "Call testCallDoesNotExist function", "command": "sh learn_tests/3.sh" }
   ],
   "learnerAccessibleFileList": ["contracts/*"]
 }
